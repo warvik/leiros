@@ -1,0 +1,54 @@
+$light-color:       #efe9d9;
+$dark-color:        #3e3737;
+
+$logo-width:        151px;
+$logo-height:       30px;
+
+html {
+  body {
+    header#header {
+      background-color: $dark-color;
+      position: relative;
+
+      section#logo {
+
+        a {
+          display: inline-block;
+          width: $logo-width;
+          height: $logo-height;
+          margin: 20px;
+          @include at2x('logo-white', $logo-width, $logo-height);
+
+          img {
+            display: none;
+          }
+        }
+
+      }
+
+      #sb-toggle {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        margin-top: -12px;
+        color: $light-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+
+        @extend .flaticon-menu55;
+        &:before {
+          font-size: 22px;
+          vertical-align: bottom;
+          padding-right: 5px;
+        }
+      }
+
+      .region {
+        &.region-header {
+          display: none;
+        }
+      }
+    }
+  }
+}

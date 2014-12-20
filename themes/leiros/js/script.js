@@ -14,10 +14,21 @@
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
+Drupal.behaviors.slidebar = {
   attach: function(context, settings) {
 
-    // Place your code here.
+    var slidebar = new $.slidebars({
+      siteClose: true, // true or false
+      disableOver: false, // integer or false
+      hideControlClasses: true, // true or false
+      scrollLock: false // true or false
+    });
+
+    slidebar.slidebars.toggle('right');
+
+    $('#sb-toggle').click(function(){
+      slidebar.slidebars.toggle('right');
+    });
 
   }
 };

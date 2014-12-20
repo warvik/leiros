@@ -17,7 +17,18 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
+
+body {
+  #page {
+    background-color: #eee8d9;
+  }
+}
+
+@import "misc/flaticons";
 // Optionally, add your own components here.
+@import "components/slidebar_core";
+@import "components/header";
+@import "components/slidebar";
 @import "print";
 
 /* SMACSS theme rules */

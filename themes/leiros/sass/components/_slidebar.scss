@@ -1,0 +1,36 @@
+$light-color:       #efe9d9;
+$dark-color:        #3e3737;
+
+html.sb-init {
+
+  .sb-slidebar {
+
+    .block {
+      .block-title {
+        display: none;
+      }
+
+      .menu-block-wrapper {
+        ul.menu {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          li {
+            a {
+              display: block;
+              text-align: center;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: $light-color;
+              padding: 10px;
+              font-weight: 200;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
