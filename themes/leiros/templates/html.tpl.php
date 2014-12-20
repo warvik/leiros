@@ -53,7 +53,7 @@
     <?php print $page_bottom; ?>
   </div>
 
-  <div class="sb-slidebar sb-right">
+  <div class="sb-slidebar sb-right sb-style-push">
     <?php print $slidebar; ?>
   </div>
 </body>

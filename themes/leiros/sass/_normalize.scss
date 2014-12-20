@@ -112,6 +112,12 @@ html {
   @include adjust-leading-to(1);
 }
 
+html, body, #sb-page, #page {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
   /* Address `font-family` inconsistency between `textarea` and other form elements. */
   button,

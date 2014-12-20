@@ -24,8 +24,6 @@ Drupal.behaviors.slidebar = {
       scrollLock: false // true or false
     });
 
-    slidebar.slidebars.toggle('right');
-
     $('#sb-toggle').click(function(){
       slidebar.slidebars.toggle('right');
     });
