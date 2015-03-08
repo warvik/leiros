@@ -6,6 +6,8 @@ html.sb-init {
   .sb-slidebar {
 
     .block {
+      margin-bottom: 10px;
+
       .block-title {
         display: none;
       }
@@ -29,6 +31,24 @@ html.sb-init {
           }
         }
       }
+
+      form[id^=search-block-form] {
+        padding: 20px;
+
+        input {
+
+          &[type=text] {
+            width: 100%;
+            border: none;
+            padding: 8px 8px 8px 40px;
+          }
+
+          &[type=submit] {
+            display: none;
+          }
+        }
+      }
+
     }
 
   }

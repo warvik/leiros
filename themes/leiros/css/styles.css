@@ -2046,17 +2046,21 @@ html body header#header .region.region-header {
   display: none;
 }
 
-/* line 9, ../sass/components/_slidebar.scss */
+/* line 8, ../sass/components/_slidebar.scss */
+html.sb-init .sb-slidebar .block {
+  margin-bottom: 10px;
+}
+/* line 11, ../sass/components/_slidebar.scss */
 html.sb-init .sb-slidebar .block .block-title {
   display: none;
 }
-/* line 14, ../sass/components/_slidebar.scss */
+/* line 16, ../sass/components/_slidebar.scss */
 html.sb-init .sb-slidebar .block .menu-block-wrapper ul.menu {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 20, ../sass/components/_slidebar.scss */
+/* line 22, ../sass/components/_slidebar.scss */
 html.sb-init .sb-slidebar .block .menu-block-wrapper ul.menu li a {
   display: block;
   text-align: center;
@@ -2065,6 +2069,20 @@ html.sb-init .sb-slidebar .block .menu-block-wrapper ul.menu li a {
   color: #efe9d9;
   padding: 10px;
   font-weight: 200;
+}
+/* line 35, ../sass/components/_slidebar.scss */
+html.sb-init .sb-slidebar .block form[id^=search-block-form] {
+  padding: 20px;
+}
+/* line 40, ../sass/components/_slidebar.scss */
+html.sb-init .sb-slidebar .block form[id^=search-block-form] input[type=text] {
+  width: 100%;
+  border: none;
+  padding: 8px 8px 8px 40px;
+}
+/* line 46, ../sass/components/_slidebar.scss */
+html.sb-init .sb-slidebar .block form[id^=search-block-form] input[type=submit] {
+  display: none;
 }
 
 /**
